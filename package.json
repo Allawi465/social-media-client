@@ -5,9 +5,10 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
+    "test": "npm run test-unit",
+    "test-unit": "jest",
     "build": "sass src/scss:dist/css",
     "start": "sass --watch src/scss:dist/css & live-server",
-    "test": "node src/**/*.js",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
     "lint-fix": "eslint src/**/*.js --cache --fix",
