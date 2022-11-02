@@ -6,22 +6,25 @@
     "extends": "eslint:recommended",
     "overrides": [
         {
-            "files": ["**/*.test.js"],
-            "env": { "jest": true },
-            "plugins": ["jest"],
-            "extends": ["plugin:jest/recommended"],
-            "rules": { "jest/prefer-expect-assertions": "off" }
-            
+          "files": ["**/*.cy.js"],
+          "env": { "cypress/globals": true },
+          "plugins": ["cypress"],
+          "extends": ["plugin:cypress/recommended"],
+          "rules": {
+            "cypress/no-unnecessary-waiting": "off",
+            "no-unused-vars": "off"
+          }
         },
         {
-            "files": ["**/*.cy.js"],
-            "env": { "cypress/globals": true },
-            "plugins": ["cypress"],
-            "extends": ["plugin:cypress/recommended"],
-            "rules": {
-              "cypress/no-unnecessary-waiting": "off",
-              "no-unused-vars": "off"
-            }
+          "files": ["**/cypress.config.js"],
+          "env": { "cypress/globals": true },
+          "plugins": ["cypress"],
+          "extends": ["plugin:cypress/recommended"],
+          "rules": {
+            "cypress/no-unnecessary-waiting": "off",
+            "no-unused-vars": "off",
+            "no-undef": "off"
+          }
         }
     ],
     "parserOptions": {
@@ -29,6 +32,7 @@
         "sourceType": "module"
     },
     "rules": {
-        "no-undef": "warn"
+        "no-undef": "off",
+        "no-unused-vars": "off"
     }
 }
