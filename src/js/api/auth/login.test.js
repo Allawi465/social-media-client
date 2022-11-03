@@ -44,8 +44,6 @@ function fetchFailureLogin(
   });
 }
 
-const inValid_password = '123456';
-const inValid_mail = 'est@stud123.noroff.no';
 const data = {
   mail: 'test@stud.noroff.no',
   password: '12345678',
@@ -56,7 +54,7 @@ const data = {
 describe('login', () => {
   it('should return false when provided with an invalid mail or password', async () => {
     global.fetch = jest.fn(() => fetchFailureLogin());
-    const loginFun = await login(inValid_password, inValid_mail);
+    const loginFun = await login();
     expect(loginFun).toEqual(false);
   });
 
@@ -65,5 +63,6 @@ describe('login', () => {
     const loginFun = await login(data);
     expect(loginFun.mail).toMatch(/[\w\-.]+@(stud.)?noroff.no$/);
     expect(loginFun.password).toMatch(/[^ ]{8,16}/);
+    expect(loginFun.token).toBe('valid token');
   });
 });
