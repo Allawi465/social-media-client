@@ -5,10 +5,10 @@ import { LocalStorageMock } from '../../test/LocalStorageMock.js';
 global.localStorage = new LocalStorageMock();
 
 describe('logout', () => {
-  it('The logout function clears the token from browser storage', async () => {
-    const logoutFun = logout();
+  it('The logout function clears the token from browser storage', () => {
+    const clearToken = logout();
     const key = 'token';
     remove(key);
-    expect(logoutFun).toEqual(undefined);
+    expect(clearToken).toBe(undefined);
   });
 });
