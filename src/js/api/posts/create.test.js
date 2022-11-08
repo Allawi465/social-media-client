@@ -17,7 +17,6 @@ function fetchFailureLogin(status = 401, statusText = 'refresh token missing') {
   });
 }
 
-const oldPost = { title: '', body: '', media: '' };
 const newPost = {
   title: 'new Post',
   body: 'new post body',
@@ -29,16 +28,16 @@ describe('createPost', () => {
   it('throw error if fetch is a failure', async () => {
     global.fetch = jest.fn(() => fetchFailureLogin());
     await expect(
-      createPost(oldPost.title, oldPost.body, oldPost.media)
+      createPost(newPost.title, newPost.body, newPost.media)
     ).rejects.toThrow('refresh token missing');
   });
 
   it('creates a new item on the API', async () => {
     global.fetch = jest.fn(() => fetchSuccessPost());
     const creatingNewPost = await createPost(
-      oldPost.title,
-      oldPost.body,
-      oldPost.media
+      newPost.title,
+      newPost.body,
+      newPost.media
     );
     expect(creatingNewPost).toEqual(newPost);
   });
