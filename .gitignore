@@ -2,5 +2,6 @@
 /dist
 /coverage
 .eslintcache
+.env
 cypress/**/*.png
-cypress/**/*.mp4
+cypress/**/*.mp4git 
