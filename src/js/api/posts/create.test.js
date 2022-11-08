@@ -26,14 +26,14 @@ const newPost = {
 };
 
 describe('createPost', () => {
-  it('The create item function trow error if fetch is a failure', async () => {
+  it('throw error if fetch is a failure', async () => {
     global.fetch = jest.fn(() => fetchFailureLogin());
     await expect(
       createPost(oldPost.title, oldPost.body, oldPost.media)
     ).rejects.toThrow('refresh token missing');
   });
 
-  it('The create item function creates a new item on the API', async () => {
+  it('creates a new item on the API', async () => {
     global.fetch = jest.fn(() => fetchSuccessPost());
     const creatingNewPost = await createPost(
       oldPost.title,

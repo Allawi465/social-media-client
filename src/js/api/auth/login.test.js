@@ -42,7 +42,7 @@ describe('login', () => {
     );
   });
 
-  it('Returns a valid token when provided with a valid mail and password', async () => {
+  it('returns a valid token when provided with a valid mail and password', async () => {
     expect(mail).toMatch(/[\w\-.]+@(stud.)?noroff.no$/);
     expect(password).toMatch(/[^ ]{8,16}/);
     global.fetch = jest.fn(() => fetchSuccessLogin());
