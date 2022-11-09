@@ -1,5 +1,7 @@
 /node_modules
 /dist
+/coverage
+.env
 .eslintcache
 cypress/**/*.png
-cypress/**/*.mp4
+cypress/**/*.mp4git statu
