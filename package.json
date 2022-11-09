@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test-unit && npm run test-e2e-cli",
+    "test": "npm run test-unit -- --watchAll && npm run test-e2e-cli",
     "test-unit": "jest",
     "test-e2e": "cypress open",
     "test-e2e-cli": "cypress run",
@@ -29,7 +29,7 @@
     "husky": "^8.0.1",
     "jest": "^29.2.0",
     "lint-staged": "^13.0.3",
-    "live-server": "^1.2.2",
+    "live-server": "^1.1.0",
     "prettier": "^2.7.1",
     "sass": "^1.54.8"
   },
