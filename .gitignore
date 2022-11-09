@@ -4,4 +4,4 @@
 .eslintcache
 .env
 cypress/**/*.png
-cypress/**/*.mp4git statu
+cypress/**/*.mp4
