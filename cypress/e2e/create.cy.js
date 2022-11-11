@@ -18,10 +18,6 @@ describe('create a post', () => {
     cy.wait(500);
     cy.get("button[type='submit']:visible").click();
     cy.wait(500);
-    cy.then(
-      () => expect(window.localStorage.getItem('profile')).to.not.be.null
-    );
-    cy.then(() => expect(window.localStorage.getItem('token')).to.not.be.null);
   });
 
   it('create a post', () => {
