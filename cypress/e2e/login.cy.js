@@ -1,4 +1,4 @@
-describe('Social media app', () => {
+describe('login', () => {
   const email = Cypress.env('email');
   const password = Cypress.env('password');
 
