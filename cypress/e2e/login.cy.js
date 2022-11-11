@@ -8,8 +8,6 @@ describe('login', () => {
   });
 
   it('login with valid email and password', () => {
-    cy.visit('/');
-    cy.wait(1000);
     cy.get("button[type='reset']:visible").click();
     cy.wait(500);
     cy.get("button[data-auth='login']:visible").click();
@@ -28,8 +26,6 @@ describe('login', () => {
   });
 
   it('get alert when login with invalid email and password', () => {
-    cy.visit('/');
-    cy.wait(1000);
     cy.get("button[type='reset']:visible").click();
     cy.wait(500);
     cy.get("button[data-auth='login']:visible").click();

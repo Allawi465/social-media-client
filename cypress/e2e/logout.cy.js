@@ -8,8 +8,6 @@ describe('logout', () => {
   });
 
   it('logout user', () => {
-    cy.visit('/');
-    cy.wait(500);
     cy.get("button[type='reset']:visible").click();
     cy.wait(500);
     cy.get("button[data-auth='login']:visible").click();
