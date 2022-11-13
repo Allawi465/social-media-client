@@ -1,9 +1,5 @@
 # social-media-client
 
-fork of the Noroff social media client
-
-[![Deploy static content to Pages](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml) [![Automated Unit Testing](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml) [![Automated E2E Testing](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml)
-
 # Workflow Course Assignment
 
 [![Deploy static content to Pages](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml) [![Automated Unit Testing](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml) [![Automated E2E Testing](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml)
@@ -24,7 +20,7 @@ Build SASS
 npm run build
 ```
 
-## installed a dependency
+## installed dependencies
   - @babel/core: "^7.19.3",
   - @babel/preset-env: "^7.19.4",
   - cypress: "^10.7.0",
@@ -41,11 +37,9 @@ npm run build
   - sass: "^1.54.8",
   - vite: "^3.2.3"
 
-## Tests
+## Tests with Unit testing & Cypress
 
 ### Unit testing, Jest
-
-Added the following test files;
 
 - login.test.js
   - Successful login
@@ -57,8 +51,6 @@ Added the following test files;
   - Unsuccessful to create a post
 
 ### End To End testing, Cypress
-
-Added the following end to end test files for Cypress
 
 - login.cy.js
   - Login with valid credentials
