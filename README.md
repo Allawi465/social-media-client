@@ -1,6 +1,6 @@
 # social-media-client
 
-a fork of the Noroff social media client
+fork of the Noroff social media client
 
 [![Deploy static content to Pages](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/pages.yml) [![Automated Unit Testing](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/unit-test.yml) [![Automated E2E Testing](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml/badge.svg)](https://github.com/Allawi465/social-media-client/actions/workflows/e2e_testing.yml)
 
