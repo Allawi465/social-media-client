@@ -58,7 +58,7 @@ describe('login', () => {
     cy.get('#loginForm :invalid').should('not.exist');
     cy.wait(1000);
     cy.get("button[type='submit']:visible").click();
-    cy.wait(5000);
+    cy.wait(1000);
     cy.on('window:alert', (test) => {
       expect(test).to.equal(
         'Either your username was not found or your password is incorrect'
