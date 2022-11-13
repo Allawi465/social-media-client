@@ -65,7 +65,7 @@ Added the following end to end test files for Cypress
   - Login error handling with invalid email and password
 - logout.cy.js
   - LocalStorage delete token
-- createPost.cy.js
+- create.cy.js
   - Tests user can create a post
   - Tests form validates inputs to create a post
 
