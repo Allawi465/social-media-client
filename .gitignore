@@ -1,2 +1,8 @@
 /node_modules
 /dist
+/coverage 
+/cypress/screenshots
+/cypress/videos
+.vscode/settings.json
+.env
+.eslintcache
